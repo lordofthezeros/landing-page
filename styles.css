@@ -1,74 +1,141 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
-}
-
-.navigation {
-    display: flex;
-    background-color: #1F2937;
-    padding: 16px;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    padding: 8px 20%;
 }
 
 .hero {
     display: flex;
-    padding: 50px 20%;
+    flex-direction: column;
+    padding: 24px 15% 100px;
     background-color: #1F2937;
-    gap: 16px;
-    justify-items: flex-start;
-    align-items: flex-start;
+    color: #F9FAF8;
 }
 
-.hero-text {
-    color: #f9faf8;
-    height: 250px;
-    box-sizing: border-box;
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    font-weight: bolder;
-    margin: 0;
-}
-
-.hero-text button {
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #3882f6;
-    border-radius: 5px;
-    margin: 0;
-    color: #f9faf8;
-    padding: 8px 24px;
-}
-
-.hero img {
-    width: auto;
-    height: 250px;
-    object-fit: contain;
-
-
-}
-
-ul {
+.navbar {
     display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    gap: 16px
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 100px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.logo {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
 }
 
-.nav-links a {
-    font-size: 14px;
+.nav-link {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero-button {
+    max-width: 30%;
+    background-color: #3882F6;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     font-weight: normal;
+    color: #F9FAF8;
+    border-radius: 12px;
+    padding: 8px 24px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 48px 15% 100px;
+    color: #1F2937;
+}
+
+.info-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin-bottom: 42px;
+}
+
+.info-card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-card-item {
+    max-width: 200px;
+}
+
+.fas {
+    color: #1F2937;
+    margin-bottom: 36px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10% 15%;
+    background-color: #e5e7eb;
+    color: #1F2937;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
 }
