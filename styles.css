@@ -139,3 +139,28 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
+
+.cta-container {
+    padding: 8% 15%;
+    justify-content: center;
+    align-content: center;
+}
+
+.cta-content {
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 12px;
+    padding: 5% 10%;
+    justify-content: space-between;
+    color: #F9FAF8;
+    font-family: 'Montserrat',   sans-serif;   
+}
+
+.cta-button {
+    background-color: #3882F6;
+    border-color: #F9FAF8;
+    border-radius: 12px;
+    padding: 8px 24px;
+    font-size: 24px;
+    color: #F9FAF8;
+}
